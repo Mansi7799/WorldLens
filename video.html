@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorldLens - Video Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      color: #ffffffb5;
+      font-size: 30px;
+      font-weight: 700;
+      background: black;
+      display: flex;
+      justify-content: space-between;
+      height: 70px;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      background-image: url(../photos/logo.jpg);
+      background-size: cover;
+      height: 60px;
+      width: 60px;
+      margin-left: 30px;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-weight: bolder;
+      align-self: center;
+      color: white;
+      margin-left: 10px;
+    }
+
+    header nav {
+      display: flex;
+      margin-right: 40px;
+    }
+
+    header nav a {
+      font-size: 15px;
+      text-decoration: none;
+      color: #cccecf;
+      font-weight: 500;
+      margin: 20px;
+    }
+
+    nav a:hover,
+    header nav a.active {
+      color: #0f8dc7;
+    }
+
+    /* Hero section */
+    .hero {
+      background: url("../photos/forest.jpg") center/cover no-repeat;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #e2d6d6;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin-top: 10px;
+      color: #e2d6d6;
+    }
+
+    /* Video section */
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 40px 20px;
+      justify-items: center;
+    }
+
+    .videos video {
+      width: 100%;
+      max-width: 400px;
+      height: 250px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .videos video:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo"></div>
+      <div class="name">WORLDLENS</div>
+    </div>
+
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="video.html" class="active">VIDEO</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>VIDEO GALLERY</h1>
+    <p>Experience the world through motion</p>
+  </section>
+
+  <!-- Video Section -->
+  <section class="videos">
+    <video controls>
+      <source src="../photos/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video controls>
+      <source src="../photos/video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video controls>
+      <source src="../photos/video3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video controls>
+      <source src="../photos/video4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video controls>
+      <source src="../photos/video5.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video controls>
+      <source src="../photos/video6.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 WorldLens. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

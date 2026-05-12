@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | WorldLens</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      color: #ffffffb5;
+      font-size: 30px;
+      font-weight: 700;
+      background: black;
+      display: flex;
+      justify-content: space-between;
+      height: 70px;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      background-image: url(../photos/logo.jpg);
+      background-size: cover;
+      height: 60px;
+      width: 60px;
+      margin-left: 30px;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-weight: bolder;
+      align-self: center;
+      color: white;
+      margin-left: 10px;
+    }
+
+    header nav {
+      display: flex;
+      margin-right: 40px;
+    }
+
+    header nav a {
+      font-size: 15px;
+      text-decoration: none;
+      color: #cccecf;
+      font-weight: 500;
+      margin: 20px;
+    }
+
+    nav a:hover,
+    header nav a.active {
+      color: #0f8dc7;
+    }
+
+    .about {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #034767;
+    }
+
+    .about h2 {
+      margin-top: 40px;
+      color: #034767;
+    }
+
+    .about p, .about li {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li::before {
+      content: "• ";
+      color: #034767;
+    }
+
+    .quote {
+      text-align: center;
+      margin-top: 40px;
+      font-style: italic;
+      color: #e2e2e2;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"></div>
+      <div class="name">WORLDLENS</div>
+    </div>
+
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html" class="active">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="video.html">VIDEO</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="about">
+    <div class="about-container">
+      <h1>About WorldLens</h1>
+      <p>
+        Welcome to <strong>WorldLens</strong> — a space where every photograph tells a story, 
+        every place holds a memory, and every journey becomes an inspiration.
+      </p>
+
+      <p>
+        WorldLens started with a simple idea: to <em>see the world differently</em>. 
+        Through this platform, I capture the beauty of distant lands, 
+        the rhythm of cultures, and the wonder hidden in everyday life. 
+        Whether it’s the colorful chaos of Indian streets, 
+        the peaceful glow of Norwegian nights, or the turquoise calm of the Maldives — 
+        each frame speaks a language of its own.
+      </p>
+
+      <p>
+        My mission is to make you feel like you’ve traveled the world — 
+        even if you’re just sitting at home. 🌍
+      </p>
+
+      <h2>What You’ll Find Here</h2>
+      <ul>
+        <li>📸 Stunning travel photography and short travel stories</li>
+        <li>🗺️ Guides and insights on unique destinations</li>
+        <li>✈️ Tips to make your own travel experiences unforgettable</li>
+      </ul>
+
+      <p>
+        Through <strong>WorldLens</strong>, I hope to inspire dreamers, travelers, 
+        and storytellers to explore beyond boundaries. Because sometimes, 
+        all it takes is a lens to change how we see the world.
+      </p>
+
+      <p class="quote">
+        “Don’t just travel to see new places — travel to see with new eyes.”
+      </p>
+    </div>
+  </section>
+</body>
+</html>

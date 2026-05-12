@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorldLens - Photo Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      color: #ffffffb5;
+      font-size: 30px;
+      font-weight: 700;
+      background: black;
+      display: flex;
+      justify-content: space-between;
+      height: 70px;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      background-image: url(../photos/logo.jpg);
+      background-size: cover;
+      height: 60px;
+      width: 60px;
+      margin-left: 30px;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-weight: bolder;
+      align-self: center;
+      color: white;
+      margin-left: 10px;
+    }
+
+    header nav {
+      display: flex;
+      margin-right: 40px;
+    }
+
+    header nav a {
+      font-size: 15px;
+      text-decoration: none;
+      color: #cccecf;
+      font-weight: 500;
+      margin: 20px;
+    }
+
+    nav a:hover,
+    header nav a.active {
+      color: #0f8dc7;
+    }
+
+    /* Hero section */
+    .hero {
+      background: url("../photos/beach.jpg") center/cover no-repeat;
+      padding: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+      gap: 25px;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin: 0;
+      color: #f1e8e8;
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin-top: 10px;
+      color: #f1e8e8;
+    
+    }
+
+    /* Gallery layout */
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    .india, .maldives, .monaco, .norway {
+      text-align: center;
+    }
+
+    .india h3, .maldives h3, .monaco h3, .norway h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .country-photos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 35px;
+    }
+
+    .country-photos img {
+      width: 350px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .country-photos img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo"></div>
+      <div class="name">WORLDLENS</div>
+    </div>
+
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="gallery.html" class="active">GALLERY</a>
+      <a href="video.html">VIDEO</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>GALLERY</h1>
+    <p>Some pictures from our travel</p>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section class="gallery">
+    <div class="india">
+      <h3>INDIA</h3>
+      <div class="country-photos">
+        <img src="../photos/india1.jpg" alt="INDIA">
+        <img src="../photos/india2.jpg" alt="INDIA">
+        <img src="../photos/india3.jpg" alt="INDIA">
+      </div>
+    </div>
+
+    <div class="maldives">
+      <h3>MALDIVES</h3>
+      <div class="country-photos">
+        <img src="../photos/maldives.jpg" alt="MALDIVES">
+        <img src="../photos/maldives2.jpg" alt="MALDIVES">
+        <img src="../photos/maldives3.jpg" alt="MALDIVES">
+      </div>
+    </div>
+
+    <div class="monaco">
+      <h3>MONACO</h3>
+      <div class="country-photos">
+        <img src="../photos/monaco.jpg" alt="MONACO">
+        <img src="../photos/monaco2.jpg" alt="MONACO">
+        <img src="../photos/monaco3.jpg" alt="MONACO">
+      </div>
+    </div>
+
+    <div class="norway">
+      <h3>NORWAY</h3>
+      <div class="country-photos">
+        <img src="../photos/norway.jpg" alt="NORWAY">
+        <img src="../photos/norway2.jpg" alt="NORWAY">
+        <img src="../photos/norway3.jpg" alt="NORWAY">
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
