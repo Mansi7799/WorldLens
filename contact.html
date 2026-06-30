@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | WorldLens</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #6f6c6c;
+      color: white;
+    }
+
+    header {
+      color: #ffffffb5;
+      font-size: 30px;
+      font-weight: 700;
+      background: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+      padding: 10px;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      background-image: url(../photos/logo.jpg);
+      background-size: cover;
+      height: 60px;
+      width: 60px;
+      margin-left: 30px;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-weight: bolder;
+      color: white;
+      margin-left: 10px;
+    }
+
+    header nav {
+      display: flex;
+      margin-right: 40px;
+    }
+
+    header nav a {
+      font-size: 15px;
+      text-decoration: none;
+      color: #cccecf;
+      font-weight: 500;
+      margin: 20px;
+    }
+
+    nav a:hover,
+    header nav a.active {
+      color: #0f8dc7;
+    }
+
+    .contact-header {
+      text-align: center;
+      padding: 50px 20px 20px;
+    }
+
+    .contact-header h1 {
+      font-size: 36px;
+      color: #0f8dc7;
+    }
+
+    .contact-header p {
+      font-size: 18px;
+      color: #ffffffd1;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .contact-info {
+      background-color: #333;
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    .contact-info h2 {
+      color: #0f8dc7;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      line-height: 1.8;
+    }
+
+    form {
+      background-color: #333;
+      padding: 30px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    form label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    form textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #0f8dc7;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    button:hover {
+      background-color: #0b6a93;
+    }
+
+    form input,
+form textarea,
+form select {
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form select {
+  background: white;
+}
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #000;
+      color: #aaa;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 800px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"></div>
+      <div class="name"> WORLDLENS </div>
+    </div>
+    
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="video.html">VIDEO</a>
+      <a href="contact.html" class="active">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="contact-header">
+    <h1>Get in Touch</h1>
+    <p>We’d love to hear from you! Send us a message or reach us directly below.</p>
+  </section>
+
+  <section class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Details</h2>
+      <p><strong>Email:</strong> worldlens@gmail.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Address:</strong> Pune, Maharashtra, India</p>
+      <p><strong>Instagram:</strong> @worldlens_official</p>
+    </div>
+
+    <form action="#" method="post">
+
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name"
+         placeholder="Enter your name" required>
+
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email"
+         placeholder="Enter your email" required>
+
+  <label for="phone">Phone Number</label>
+  <input type="tel" id="phone" name="phone"
+         placeholder="Enter your phone number" required>
+
+  <label for="destination">Preferred Destination</label>
+  <input type="text" id="destination" name="destination"
+         placeholder="e.g. Maldives, Switzerland">
+
+  <label for="traveldate">Travel Date</label>
+  <input type="date" id="traveldate" name="traveldate">
+
+  <label for="travelers">Number of Travelers</label>
+  <input type="number" id="travelers" name="travelers"
+         min="1" placeholder="Enter number of travelers">
+
+  <label for="budget">Budget Range</label>
+  <select id="budget" name="budget">
+      <option>Select Budget</option>
+      <option>₹10,000 - ₹25,000</option>
+      <option>₹25,000 - ₹50,000</option>
+      <option>₹50,000 - ₹1,00,000</option>
+      <option>₹1,00,000+</option>
+  </select>
+
+  <label for="triptype">Trip Type</label>
+  <select id="triptype" name="triptype">
+      <option>Select Trip Type</option>
+      <option>Family</option>
+      <option>Adventure</option>
+      <option>Honeymoon</option>
+      <option>Solo</option>
+      <option>Luxury</option>
+      <option>Business</option>
+  </select>
+
+  <label for="message">Special Requirements</label>
+  <textarea id="message" name="message"
+            placeholder="Write your requirements here"></textarea>
+
+  <button type="submit">Plan My Trip</button>
+
+</form>
+
+
+
+  <footer>
+    © 2025 WorldLens | All Rights Reserved
+  </footer>
+</body>
+</html>
